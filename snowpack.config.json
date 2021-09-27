@@ -3,6 +3,9 @@
     "dist": "/",
     "src": "/"
   },
+  "devOptions":{
+    "port":3030
+  },
   "plugins": [
     [
       "@snowpack/plugin-postcss"
