@@ -12,3 +12,34 @@
     font-family: 'Libre Caslon Text', serif;
   }
 }
+
+.medium-widget__wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3rem;
+}
+
+.medium-widget-article__image img{
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.medium-widget-article__title{
+  font-family: 'Libre Caslon Text', serif;
+  padding-bottom: 10px;
+}
+.medium-widget-article__description, .medium-widget-article__info{
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  line-height: 22px;
+}
+
+.medium-widget-article__content{
+  padding: 15px 25px;
+  background-color: #ffF;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.medium-widget-article__column{
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
