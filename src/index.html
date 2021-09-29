@@ -154,7 +154,7 @@
                       Login
                     </a>
                     <a
-                      href="javascript:void(0)"
+                    href="javascript:void(0)" onclick="onModuleOpen()"
                       class="
                         ml-2
                         inline-flex
@@ -522,7 +522,7 @@
                       and send invites to all your team members.
                     </p>
                     <a
-                      href="#"
+                    href="javascript:void(0)" onclick="onModuleOpen()"
                       class="
                         inline-flex
                         items-center
@@ -595,7 +595,7 @@
                       more with a 5-8 mins chat with Shifoo Bot.
                     </p>
                     <a
-                      href="#"
+                    href="javascript:void(0)" onclick="onModuleOpen()"
                       class="
                         inline-flex
                         items-center
@@ -706,7 +706,7 @@
                       your workplace.
                     </p>
                     <a
-                      href="#"
+                    href="javascript:void(0)" onclick="onModuleOpen()"
                       class="
                         inline-flex
                         items-center
@@ -776,7 +776,7 @@
                       system that is transparent, unbiased, and structured.
                     </p>
                     <a
-                      href="#"
+                    href="javascript:void(0)" onclick="onModuleOpen()"
                       class="
                         inline-flex
                         items-center
@@ -886,7 +886,7 @@
                       our platform, to avoid information spillage.
                     </p>
                     <a
-                      href="#"
+                    href="javascript:void(0)" onclick="onModuleOpen()"
                       class="
                         inline-flex
                         items-center
@@ -1303,7 +1303,7 @@
                 away.
               </p>
               <a
-                href="#"
+              href="javascript:void(0)" onclick="onModuleOpen()"
                 class="
                   mt-8
                   bg-brand
@@ -1500,7 +1500,7 @@
                 </div>
               </div>
               <a
-                href="#"
+                href="javascript:void(0)"
                 class="
                   mt-8
                   block
@@ -1512,6 +1512,7 @@
                   text-sm text-white text-center
                   hover:bg-opacity-90
                 "
+                onclick="onModuleOpen()"
                 >Get Started</a
               >
             </div>
@@ -1563,8 +1564,7 @@
                 </div>
               </div>
               <a
-                href="#"
-                class="
+              href="javascript:void(0)" onclick="onModuleOpen()" class="
                   mt-8
                   block
                   font-medium
@@ -1626,7 +1626,7 @@
                 </div>
               </div>
               <a
-                href="#"
+              href="javascript:void(0)" onclick="onModuleOpen()"
                 class="
                   mt-8
                   block
@@ -1689,7 +1689,7 @@
                 </div>
               </div>
               <a
-                href="#"
+              href="javascript:void(0)" onclick="onModuleOpen()"
                 class="
                   mt-8
                   block
@@ -2137,7 +2137,7 @@
                 </div>
               </div>
             </div>
-            <span class="text-sm text-gray-500">
+            <span class="text-xs text-gray-500">
               *Your information will never be shared with any third party.
             </span>
           <div
@@ -2219,8 +2219,12 @@
       let overlay = document.getElementById("overlay");
       const scheduleDemoForm = document.getElementById("scheduleDemo");
 
+      let onModuleOpen = () =>{
+        modal.classList.remove('hidden')
+      }
+
       openBtn.onclick = function() {
-        modal.classList.remove('hidden');
+        onModuleOpen();
       }
 
       let cancelModal = () =>{
