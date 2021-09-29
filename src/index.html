@@ -149,7 +149,7 @@
                       Login
                     </a>
                     <a
-                      href="#"
+                      href="javascript:void(0)"
                       class="
                         ml-2
                         inline-flex
@@ -256,8 +256,8 @@
                 "
               >
                 <a
-                  href="#"
-                  class="
+                href="javascript:void(0)"
+                class="
                     flex
                     items-center
                     justify-center
@@ -277,7 +277,8 @@
                   Let's Chat
                 </a>
                 <a
-                  href="#"
+                href="javascript:void(0)"
+                id="open-btn"
                   class="
                     flex
                     items-center
@@ -294,7 +295,6 @@
                     hover:bg-brand hover:bg-opacity-10
                     sm:px-8
                   "
-                  id="open-btn"
                 >
                   Book a Demo
                 </a>
@@ -1966,6 +1966,230 @@
       </div>
     </footer>
 
+    <div
+      class="fixed z-10 inset-0 overflow-y-auto hidden"
+      aria-labelledby="modal-title"
+      role="dialog"
+      aria-modal="true"
+      id="scheduleModal"
+    >
+      <div
+        class="
+          flex
+          items-end
+          justify-center
+          min-h-screen
+          pt-4
+          px-4
+          pb-20
+          text-center
+          sm:block sm:p-0
+        "
+      >
+        <!--
+          Background overlay, show/hide based on modal state.
+    
+          Entering: "ease-out duration-300"
+            From: "opacity-0"
+            To: "opacity-100"
+          Leaving: "ease-in duration-200"
+            From: "opacity-100"
+            To: "opacity-0"
+        -->
+        <div
+          class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+          aria-hidden="true" id="overlay"
+        ></div>
+
+        <!-- This element is to trick the browser into centering the modal contents. -->
+        <span
+          class="hidden sm:inline-block sm:align-middle sm:h-screen"
+          aria-hidden="true"
+          >&#8203;</span
+        >
+
+        <!--
+          Modal panel, show/hide based on modal state.
+    
+          Entering: "ease-out duration-300"
+            From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+            To: "opacity-100 translate-y-0 sm:scale-100"
+          Leaving: "ease-in duration-200"
+            From: "opacity-100 translate-y-0 sm:scale-100"
+            To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+        -->
+        <div
+          class="
+            inline-block
+            align-bottom
+            bg-white
+            rounded-md
+            px-8
+            pt-5
+            pb-4
+            text-left
+            overflow-hidden
+            shadow-xl
+            transform
+            transition-all
+            sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-8
+          "
+        >
+          <!-- Heroicon name: outline/check -->
+          <div class="bg-white pb-6">
+            <h2 class="text-3xl text-darkBlue pb-1">Schedule a Demo</h2>
+            <p class="text-sm text-gray-500">
+              Give us a few details to schedule your demo
+            </p>
+          </div>
+          <form id="scheduleDemo">
+            <div class="pb-4">
+              <label
+                for="email"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Name <span class="text-brand">*</span>
+              </label>
+              <div class="mt-1">
+                <input
+                  id="name"
+                  name="name"
+                  type="name"
+                  autocomplete="name"
+                  required
+                  class="
+                    appearance-none
+                    block
+                    w-full
+                    px-3
+                    py-2
+                    border border-gray-300
+                    rounded-md
+                    shadow-sm
+                    placeholder-gray-400
+                    focus:outline-none focus:ring-brand focus:border-brand
+                    sm:text-sm
+                  "
+                />
+              </div>
+            </div>
+            <div class="pb-4">
+              <label
+                for="email"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Company Email ID <span class="text-brand">*</span>
+              </label>
+              <div class="mt-1">
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  class="
+                    appearance-none
+                    block
+                    w-full
+                    px-3
+                    py-2
+                    border border-gray-300
+                    rounded-md
+                    shadow-sm
+                    placeholder-gray-400
+                    focus:outline-none focus:ring-brand focus:border-brand
+                    sm:text-sm
+                  "
+                />
+              </div>
+            </div>
+            <div class="pb-4">
+              <label
+                for="teamsize"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Team Size <span class="text-brand">*</span>
+              </label>
+              <div class="mt-4 space-y-4">
+                <div class="flex items-center">
+                  <input id="push-everything" name="teamSize" type="radio" class="focus:brand h-4 w-4 text-brand border-gray-300">
+                  <label for="push-everything" class="ml-3 block text-sm font-medium text-gray-700">
+                    10 - 50 Employees
+                  </label>
+                </div>
+                <div class="flex items-center">
+                  <input id="push-email" name="teamSize" type="radio" class="focus:brand h-4 w-4 text-brand border-gray-300">
+                  <label for="push-email" class="ml-3 block text-sm font-medium text-gray-700">
+                    50 - 100 Employees
+                  </label>
+                </div>
+                <div class="flex items-center">
+                  <input id="push-nothing" name="teamSize" type="radio" class="focus:brand h-4 w-4 text-brand border-gray-300">
+                  <label for="push-nothing" class="ml-3 block text-sm font-medium text-gray-700">
+                    More than 100 Employees
+                  </label>
+                </div>
+              </div>
+            </div>
+            <span class="text-sm text-gray-500">
+              *Your information will never be shared with any third party.
+            </span>
+          <div
+            class="
+              mt-5
+              sm:mt-6 sm:grid sm:grid-cols-2 sm:gap-3 sm:grid-flow-row-dense
+            "
+          >
+            <button
+              type="submit"
+              class="
+                w-full
+                inline-flex
+                justify-center
+                rounded-md
+                border border-transparent
+                shadow-sm
+                px-4
+                py-2
+                bg-brand
+                text-base
+                font-medium
+                text-white
+                hover:bg-brand
+                sm:col-start-1 sm:text-sm
+              "
+            >
+              Submit
+            </button>
+            <button
+            id="cancel_btn"
+              type="button"
+              class="
+                mt-3
+                w-full
+                inline-flex
+                justify-center
+                rounded-md
+                shadow-sm
+                px-4
+                py-2
+                bg-gray-100
+                text-base
+                font-medium
+                text-gray-700
+                hover:bg-gray-200
+                sm:mt-0 sm:col-start-2 sm:text-sm
+              "
+            >
+              Cancel
+            </button>
+            
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+ 
     <script type="module" src="index.js"></script>
     <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
     <script>
@@ -1979,6 +2203,52 @@
           fields: ["description", "claps", "publishAt"],
           ratio: "landscape",
         },
+      });
+    </script>
+
+    <script>
+      let modal = document.getElementById("scheduleModal");
+      let openBtn = document.getElementById("open-btn");
+      let cancelBtn = document.getElementById("cancel_btn");
+      let overlay = document.getElementById("overlay");
+      const scheduleDemoForm = document.getElementById("scheduleDemo");
+
+      openBtn.onclick = function() {
+        modal.classList.remove('hidden');
+      }
+
+      let cancelModal = () =>{
+        modal.classList.add('hidden');
+        scheduleDemoForm.reset();
+      }
+
+      cancelBtn.onclick = ()=> {
+        cancelModal()
+      }
+
+      window.onclick = function(event) {
+        if (event.target == overlay) {
+          cancelModal()
+        }
+      }
+
+      scheduleDemoForm.addEventListener("submit", function(e){
+        e.preventDefault();
+        const formData = new FormData(this);
+
+        console.log("formData", formData);
+        const url = 'https://hook.integromat.com/ie1v9zzj7oon9etmh1x3sqk9d85310rj';
+        fetch(url, {
+          method: 'post',
+          body:formData
+        }).then((response)=>{
+          if(response.status == 200){
+              cancelModal()
+          }
+          console.log(response);
+        }).catch((error)=>{
+          console.error(error)
+        })
       });
     </script>
     <script type="module" src="index.js"></script>
