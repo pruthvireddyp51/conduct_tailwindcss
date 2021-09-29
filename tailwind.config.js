@@ -1,6 +1,6 @@
 
 module.exports = {
-  purge: ["src/index.html"],
+  purge: ["src/index.html", "src/about.html", "src/privacy-policy.html", "src/terms-and-conditions.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
