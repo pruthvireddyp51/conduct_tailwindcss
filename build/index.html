@@ -38,7 +38,7 @@
                   <div
                     class="flex items-center justify-between w-full md:w-auto"
                   >
-                    <a href="#">
+                    <a href="/">
                       <span class="sr-only">GetConduct</span>
                       <img
                         class="h-8 w-auto sm:h-10"
@@ -88,7 +88,7 @@
                 </div>
                 <div class="hidden md:flex md:space-x-10">
                   <a
-                    href="#"
+                    href="/"
                     class="font-medium text-gray-500 hover:text-gray-900"
                     >Home</a
                   >
@@ -112,7 +112,7 @@
                   >
 
                   <a
-                    href="#"
+                    href="./about.html"
                     class="font-medium text-gray-500 hover:text-gray-900"
                     >About Us</a
                   >
@@ -128,10 +128,29 @@
                     md:right-0
                   "
                 >
-                  <span class="inline-flex rounded-md shadow">
+                  <span class="inline-flex">
                     <a
                       href="#"
                       class="
+                        inline-flex
+                        items-center
+                        px-4
+                        py-2
+                        border border-solid border-brand
+                        text-base
+                        font-medium
+                        rounded-md
+                        text-brand
+                        bg-white
+                        hover:text-opacity-60
+                      "
+                    >
+                      Log in
+                    </a>
+                    <a
+                      href="#"
+                      class="
+                        ml-2
                         inline-flex
                         items-center
                         px-4
@@ -140,12 +159,12 @@
                         text-base
                         font-medium
                         rounded-md
-                        text-indigo-600
-                        bg-white
-                        hover:text-indigo-500
+                        bg-brand
+                        text-brandLight
+                        hover:text-opacity-60
                       "
                     >
-                      Log in
+                      Try it now
                     </a>
                   </span>
                 </div>
@@ -205,9 +224,7 @@
                   md:text-5xl
                 "
               >
-                <span class="block"
-                  >The future of work is inclusive. Are you ready for it?
-                </span>
+                <span class="block">Culture Compliance Simplified.</span>
               </h1>
               <p
                 class="
@@ -219,8 +236,8 @@
                   md:mt-5 md:text-xl md:max-w-3xl
                 "
               >
-                We bring data, technology, and law to give you an employee-first
-                culture building tool.
+                Give your teams a culture of care, inclusion and safety from
+                workplace misconducts.
               </p>
             </div>
             <div
@@ -289,7 +306,7 @@
       </div>
     </div>
 
-    <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto pt-16 pb-8 px-4">
       <div class="text-center pb-10">
         <h2
           class="
@@ -302,108 +319,137 @@
         >
           How it works
         </h2>
-        <p class="max-w-xl mt-5 mx-auto text-lg text-gray-500">
+        <p class="max-w-4xl mt-5 mx-auto text-sm text-gray-500">
           We use data, law, and technology to give you an end-to end platform
           that allows you to monitor and measure workplace culture seamlessly.
+          Get Conduct and start your journey towards workplace inclusion within
+          72 hours.
         </p>
       </div>
-
-      <div
-        class="flex items-center justify-center p-10"
-        style="
-          background-image: url(./assets/background_arrow.png);
-          background-repeat: no-repeat;
-          background-attachment: cover;
-          background-position: center;
-        "
-      >
-        <!-- Component Start -->
-        <div
-          class="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 max-w-6xl"
-        >
-          <!-- Tile 1 -->
-          <div class="flex flex-col p-4 m-2">
-            <div
-              class="h-40"
-              style="
-                background-image: url(./assets/image_1.png);
-                background-repeat: no-repeat;
-                background-attachment: cover;
-                background-position: center;
-              "
-            ></div>
-            <div class="flex flex-col items-start mt-4">
-              <h4 class="text-xl font-semibold">
-                Create your organization profile
-              </h4>
-              <p class="text-sm">
-                Some text about the thing that goes over a few lines.
-              </p>
+      <div class="flex flex-wrap justify-between w-full relative">
+        <img
+          class="z-0 absolute top-16 px-44"
+          src="./assets/background_arrow.png"
+        />
+        <div class="flex items-center justify-center p-10">
+          <div
+            class="
+              grid
+              xl:grid-cols-4
+              md:grid-cols-2
+              grid-cols-1
+              gap-2
+              max-w-6xl
+              z-10
+            "
+          >
+            <div class="flex flex-col p-4 m-2">
+              <section
+                class="
+                  hero
+                  container
+                  max-w-screen-lg
+                  mx-auto
+                  pb-4
+                  flex
+                  justify-center
+                "
+              >
+                <img class="w-24" src="./assets/image_1.png" alt="screenshot" />
+              </section>
+              <div class="flex flex-col items-start mt-4">
+                <h4 class="text-xl font-semibold pb-4">
+                  Create your organization profile
+                </h4>
+                <p class="text-sm text-gray-500">
+                  Add your organization details such as location and team size
+                  to kick-start your onboarding.
+                </p>
+              </div>
             </div>
-          </div>
-          <!-- Tile 2 -->
-          <div class="flex flex-col p-4 m-2">
-            <div
-              class="h-40"
-              style="
-                background-image: url(./assets/image_2.png);
-                background-repeat: no-repeat;
-                background-attachment: cover;
-                background-position: center;
-              "
-            ></div>
-            <div class="flex flex-col items-start mt-4">
-              <h4 class="text-xl font-semibold">Add your team members</h4>
-              <p class="text-sm">
-                Some text about the thing that goes over a few lines.
-              </p>
+            <!-- Tile 2 -->
+            <div class="flex flex-col p-4 m-2">
+              <section
+                class="
+                  hero
+                  container
+                  max-w-screen-lg
+                  mx-auto
+                  pb-4
+                  flex
+                  justify-center
+                "
+              >
+                <img class="w-20" src="./assets/image_2.png" alt="screenshot" />
+              </section>
+              <div class="flex flex-col items-start mt-4">
+                <h4 class="text-xl font-semibold pb-4">
+                  Add your team members
+                </h4>
+                <p class="text-sm text-gray-500">
+                  Invite all your team members to create their profiles in one
+                  go.
+                </p>
+              </div>
             </div>
-          </div>
-          <!-- Tile 3 -->
-          <div class="flex flex-col p-4 m-2">
-            <div
-              class="h-40"
-              style="
-                background-image: url(./assets/image_3.png);
-                background-repeat: no-repeat;
-                background-attachment: cover;
-                background-position: center;
-              "
-            ></div>
-            <div class="flex flex-col items-start mt-4">
-              <h4 class="text-xl font-semibold">
-                Get started with your Conduct journey
-              </h4>
-              <p class="text-sm">
-                Some text about the thing that goes over a few lines.
-              </p>
+            <!-- Tile 3 -->
+            <div class="flex flex-col p-4 m-2 mt-8">
+              <section
+                class="
+                  hero
+                  container
+                  max-w-screen-lg
+                  mx-auto
+                  pb-4
+                  flex
+                  justify-center
+                "
+              >
+                <img class="w-32" src="./assets/image_3.png" alt="screenshot" />
+              </section>
+              <div class="flex flex-col items-start mt-4">
+                <h4 class="text-xl font-semibold pb-4">
+                  Get started with your Conduct journey
+                </h4>
+                <p class="text-sm text-gray-500">
+                  Log in to your profile and start with enhancing your knowledge
+                  through our e-learning modules, get answers to sensitive
+                  questions and file misconduct complaints with ease.
+                </p>
+              </div>
             </div>
-          </div>
-          <!-- Tile 4 -->
-          <div class="flex flex-col p-4 m-2">
-            <div
-              class="h-40"
-              style="
-                background-image: url(./assets/image_4.png);
-                background-repeat: no-repeat;
-                background-attachment: cover;
-                background-position: center;
-              "
-            ></div>
-            <div class="flex flex-col items-start mt-4">
-              <h4 class="text-xl font-semibold">
-                View regular analytics and reports
-              </h4>
-              <p class="text-sm">
-                Some text about the thing that goes over a few lines.
-              </p>
+            <!-- Tile 4 -->
+            <div class="flex flex-col p-4 m-2">
+              <section
+                class="
+                  hero
+                  container
+                  max-w-screen-lg
+                  mx-auto
+                  pb-4
+                  flex
+                  justify-center
+                "
+              >
+                <img class="w-24" src="./assets/image_4.png" alt="screenshot" />
+              </section>
+              <div class="flex flex-col items-start mt-4">
+                <h4 class="text-xl font-semibold pb-4">
+                  View regular analytics and reports
+                </h4>
+                <p class="text-sm text-gray-500">
+                  Get easy insights into your team's learning journey through
+                  our data reports.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="bg-darkBlue pb-16">
+    <!-- Why Conduct -->
+    <div class="bg-darkBlue pb-6">
       <div class="relative pt-4 pb-4 overflow-hidden">
         <div class="relative">
           <div
@@ -536,9 +582,40 @@
             </dd>
           </div>
         </dl>
+
+        <blockquote
+          class="mt-6 md:flex-grow md:flex md:flex-col items-center py-6"
+        >
+          <div class="relative text-xl font-libre text-gray-300 md:flex-grow">
+            <svg
+              class="
+                absolute
+                top-0
+                left-0
+                transform
+                -translate-x-6 -translate-y-4
+                h-10
+                w-10
+                text-brand
+              "
+              fill="currentColor"
+              viewBox="0 0 32 32"
+              aria-hidden="true"
+            >
+              <path
+                d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"
+              />
+            </svg>
+            <p class="relative">
+              We are also humans building human-centric teams 🙂
+            </p>
+          </div>
+        </blockquote>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto py-8 px-4 sm:py-24 sm:px-6 lg:px-8">
+
+    <!-- Our Platform -->
+    <div class="max-w-7xl mx-auto py-16 px-4">
       <div class="text-center pb-10">
         <h2
           class="
@@ -556,7 +633,184 @@
         </p>
       </div>
       <div class="mt-1">
-        <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-6xl mx-auto">
+            <dl class="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
+              <div
+                class="
+                  flex flex-col
+                  py-10
+                  border-t border-gray-100
+                  p-6
+                  text-center
+                  sm:border-0 sm:border-l sm:border-b
+                "
+              >
+                <dt class="order-2 mt-3">
+                  <p
+                    class="
+                      text-lg
+                      leading-6
+                      text-gray-500
+                      font-libre
+                      text-gray-600
+                    "
+                  >
+                    Cost Efficient
+                  </p>
+                  <p class="mt-2 text-xs text-gray-500 text-center px-4">
+                    Making culture building affordable for your lean or large
+                    teams.
+                  </p>
+                </dt>
+                <dd class="order-1 text-5xl font-extrabold text-brand">50%</dd>
+              </div>
+              <div
+                class="
+                  flex flex-col
+                  py-10
+                  border-t border-gray-100
+                  p-6
+                  text-center
+                  sm:border-0 sm:border-l sm:border-b
+                "
+              >
+                <dt class="order-2 mt-3">
+                  <p
+                    class="
+                      text-lg
+                      leading-6
+                      text-gray-500
+                      font-libre
+                      text-gray-600
+                    "
+                  >
+                    Safe and Secure
+                  </p>
+                  <p class="mt-2 text-xs text-gray-500 text-center px-4">
+                    Your data is owned by you, at all times. Period.
+                  </p>
+                </dt>
+                <dd class="order-1 text-5xl font-extrabold text-brand">99%</dd>
+              </div>
+              <div
+                class="
+                  flex flex-col
+                  py-10
+                  border-t border-gray-100
+                  p-6
+                  text-center
+                  sm:border-0 sm:border-l sm:border-b
+                "
+              >
+                <dt class="order-2 mt-3">
+                  <p
+                    class="
+                      text-lg
+                      leading-6
+                      text-gray-500
+                      font-libre
+                      text-gray-600
+                    "
+                  >
+                    Legally Compliant
+                  </p>
+                  <p class="mt-2 text-xs text-gray-500 text-center px-4">
+                    Providing you compliance checks & updates on crucial
+                    inclusion laws.
+                  </p>
+                </dt>
+                <dd class="order-1 text-5xl font-extrabold text-brand">100%</dd>
+              </div>
+              <div
+                class="
+                  flex flex-col
+                  py-10
+                  border-t border-gray-100
+                  p-6
+                  text-center
+                  sm:border-0 sm:border-l
+                "
+              >
+                <dt class="order-2 mt-3">
+                  <p
+                    class="
+                      text-lg
+                      leading-6
+                      text-gray-500
+                      font-libre
+                      text-gray-600
+                    "
+                  >
+                    Time Saving
+                  </p>
+                  <p class="mt-2 text-xs text-gray-500 text-center px-4">
+                    Saving you time to focus on business goals and growth.
+                  </p>
+                </dt>
+                <dd class="order-1 text-5xl font-extrabold text-brand">75%</dd>
+              </div>
+              <div
+                class="
+                  flex flex-col
+                  py-10
+                  border-t border-gray-100
+                  p-6
+                  text-center
+                  sm:border-0 sm:border-l
+                "
+              >
+                <dt class="order-2 mt-3">
+                  <p
+                    class="
+                      text-lg
+                      leading-6
+                      text-gray-500
+                      font-libre
+                      text-gray-600
+                    "
+                  >
+                    Data Driven
+                  </p>
+                  <p class="mt-2 text-xs text-gray-500 text-center px-4">
+                    Giving you data insights that you never knew existed or to
+                    collect about your team's culture.
+                  </p>
+                </dt>
+                <dd class="order-1 text-5xl font-extrabold text-brand">100%</dd>
+              </div>
+              <div
+                class="
+                  flex flex-col
+                  py-10
+                  border-t border-gray-100
+                  p-6
+                  text-center
+                  sm:border-0 sm:border-l
+                "
+              >
+                <dt class="order-2 mt-3">
+                  <p
+                    class="
+                      text-lg
+                      leading-6
+                      text-gray-500
+                      font-libre
+                      text-gray-600
+                    "
+                  >
+                    Confidential
+                  </p>
+                  <p class="mt-2 text-xs text-gray-500 text-center px-4">
+                    What happens on Conduct, stays on Conduct.
+                  </p>
+                </dt>
+                <dd class="order-1 text-5xl font-extrabold text-brand">100%</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <!-- <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <div class="mt-6">
             <div class="flex items-center justify-center p-3">
               <img
@@ -577,7 +831,7 @@
             >
               50% Cost Efficient
             </h3>
-            <p class="mt-5 text-base text-gray-500 text-center">
+            <p class="mt-5 text-base text-gray-500 text-center px-8">
               Making culture building affordable for your lean or large teams.
             </p>
           </div>
@@ -601,7 +855,7 @@
             >
               99% Safe and Secure
             </h3>
-            <p class="mt-5 text-base text-gray-500 text-center">
+            <p class="mt-5 text-base text-gray-500 text-center px-8">
               Your data is owned by you, at all times. Period.
             </p>
           </div>
@@ -625,7 +879,7 @@
             >
               100% Legally Compliant
             </h3>
-            <p class="mt-5 text-base text-gray-500 text-center">
+            <p class="mt-5 text-base text-gray-500 text-center px-8">
               Providing you compliance checks & updates on crucial inclusion
               laws.
             </p>
@@ -650,7 +904,7 @@
             >
               75% Time Saving
             </h3>
-            <p class="mt-5 text-base text-gray-500 text-center">
+            <p class="mt-5 text-base text-gray-500 text-center px-8">
               Saving you time to focus on business goals and growth.
             </p>
           </div>
@@ -674,7 +928,7 @@
             >
               100% Data Driven
             </h3>
-            <p class="mt-5 text-base text-gray-500 text-center">
+            <p class="mt-5 text-base text-gray-500 text-center px-8">
               Giving you data insights that you never knew existed or to collect
               about your team's culture.
             </p>
@@ -699,41 +953,68 @@
             >
               100% Confidential
             </h3>
-            <p class="mt-5 text-base text-gray-500 text-center">
+            <p class="mt-5 text-base text-gray-500 text-center px-8">
               What happens on Conduct, stays on Conduct.
             </p>
           </div>
-        </div>
-      </div>
-      <div class="text-center pb-10 pt-10">
-        <p class="max-w-xl mt-5 mx-auto text-base text-gray-500">
-          Want to explore integrations with your existing HR system? Get in
-          touch and we will walk you through it.
-        </p>
-        <a
-          href="#"
-          class="
-            mt-8
-            inline-flex
-            items-center
-            justify-center
-            px-5
-            py-3
-            border border-transparent
-            text-base
-            font-medium
-            rounded-md
-            shadow-sm
-            text-white
-            bg-brand
-            hover:bg-opacity-90
-            sm:px-8
-          "
-        >
-          Schedule a Demo
-        </a>
+        </div> -->
       </div>
     </div>
+
+    <!-- Call to action -->
+    <div class="bg-white max-w-7xl mx-auto pb-4">
+      <div class="max-w-7xl mx-auto py-16 px-16">
+        <div
+          class="
+            bg-darkBlue
+            rounded-lg
+            shadow-xl
+            overflow-hidden
+            lg:grid lg:grid-cols-3 lg:gap-4
+          "
+        >
+          <div class="px-16 py-12 col-span-2">
+            <div class="lg:self-center">
+              <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                <span class="block">Ready to dive in?</span>
+              </h2>
+              <p class="mt-4 text-sm leading-6 text-gray-300">
+                Want to explore integrations with your existing HR system? Get
+                in touch and we will walk you through it.
+              </p>
+              <a
+                href="#"
+                class="
+                  mt-8
+                  bg-brand
+                  border border-transparent
+                  rounded-md
+                  shadow
+                  px-5
+                  py-3
+                  inline-flex
+                  items-center
+                  text-base
+                  font-medium
+                  text-brandLight
+                  hover:bg-opacity-75
+                "
+                >Schedule a Demo</a
+              >
+            </div>
+          </div>
+          <div class="flex items-center justify-center">
+            <img
+              class="w-64"
+              src="./assets/image 24.png"
+              alt="App screenshot"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product points -->
     <div class="bg-brandLight">
       <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div class="text-center pb-10">
@@ -746,7 +1027,7 @@
               lg:text-4xl
             "
           >
-            Tangible insights for real business
+            Seeing is believing
           </h2>
         </div>
 
@@ -758,7 +1039,7 @@
             lg:grid
             lg:grid-cols-3
             lg:grid-flow-col-dense
-            lg:gap-12
+            lg:gap-24
           "
         >
           <div class="mt-12 sm:mt-16 lg:mt-0">
@@ -794,21 +1075,49 @@
           >
             <div>
               <div class="mt-6">
-                <h3
-                  class="
-                    text-4xl
-                    font-extrabold
-                    tracking-normal
-                    text-titleBrown
-                    leading-normal
-                  "
-                >
-                  Know your company’s diversity profile
-                </h3>
-                <p class="mt-4 mb-4 text-lg text-titleBrownLite">
-                  We help you know your teams better so their learnings can be
-                  designed based on their profile.
-                </p>
+                <div class="flex">
+                  <div class="inline-table pr-16">
+                    <span
+                      class="
+                        text-7xl
+                        font-extrabold
+                        tracking-normal
+                        text-titleBrown
+                        leading-normal
+                        font-libre
+                      "
+                      >1</span
+                    >
+                    <span
+                      class="
+                        text-2xl
+                        font-extrabold
+                        tracking-normal
+                        text-titleBrownMedium
+                        leading-normal
+                        font-libre
+                      "
+                      >/4</span
+                    >
+                  </div>
+                  <div>
+                    <h3
+                      class="
+                        text-2xl
+                        font-extrabold
+                        tracking-normal
+                        text-titleBrown
+                        leading-normal
+                      "
+                    >
+                      Know your company’s diversity profile
+                    </h3>
+                    <p class="mt-4 mb-4 text-lg text-titleBrownLite">
+                      We help you know your teams better so their learnings can
+                      be designed based on their profile.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -824,37 +1133,65 @@
             lg:gap-12
           "
         >
-        
-        <div
-        class="
-          px-4
-          max-w-xl
-          mx-auto
-          sm:px-6
-          lg:py-16 lg:max-w-none lg:mx-0 lg:px-0
-          col-span-2
-        "
-      >
-        <div>
-          <div class="mt-6">
-            <h3
-              class="
-                text-4xl
-                font-extrabold
-                tracking-normal
-                text-titleBrown
-                leading-normal
-              "
-            >
-            Provide customized and targeted learnings for individual needs.
-
-            </h3>
-            <p class="mt-4 mb-4 text-lg text-titleBrownLite">
-                We extend micro lessons, combined with behavioral nudges to allow for behavior modification.
-            </p>
+          <div
+            class="
+              px-4
+              max-w-xl
+              mx-auto
+              sm:px-6
+              lg:py-16 lg:max-w-none lg:mx-0 lg:px-0
+              col-span-2
+            "
+          >
+            <div>
+              <div class="mt-6">
+                <div class="flex">
+                  <div class="inline-table pr-16">
+                    <span
+                      class="
+                        text-7xl
+                        font-extrabold
+                        tracking-normal
+                        text-titleBrown
+                        leading-normal
+                        font-libre
+                      "
+                      >2</span
+                    >
+                    <span
+                      class="
+                        text-2xl
+                        font-extrabold
+                        tracking-normal
+                        text-titleBrownMedium
+                        leading-normal
+                        font-libre
+                      "
+                      >/4</span
+                    >
+                  </div>
+                  <div>
+                    <h3
+                      class="
+                        text-2xl
+                        font-extrabold
+                        tracking-normal
+                        text-titleBrown
+                        leading-normal
+                      "
+                    >
+                      Provide customized and targeted learnings for individual
+                      needs.
+                    </h3>
+                    <p class="mt-4 mb-4 text-lg text-titleBrownLite">
+                      We extend micro lessons, combined with behavioral nudges
+                      to allow for behavior modification.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
           <div class="mt-12 sm:mt-16 lg:mt-0">
             <div
               class="
@@ -870,12 +1207,11 @@
             >
               <img
                 class="w-full"
-                src="./assets/image 25.png"
+                src="./assets/p_2.png"
                 alt="Inbox user interface"
               />
             </div>
           </div>
-
         </div>
         <div
           class="
@@ -903,7 +1239,7 @@
             >
               <img
                 class="w-full"
-                src="./assets/image 25.png"
+                src="./assets/p_3.png"
                 alt="Inbox user interface"
               />
             </div>
@@ -921,19 +1257,50 @@
           >
             <div>
               <div class="mt-6">
-                <h3
-                  class="
-                    text-4xl
-                    font-extrabold
-                    tracking-normal
-                    text-titleBrown
-                    leading-normal
-                  "
-                >
-                Facilitate anonymous doubt clarification and confidential process
-            </h3>
-                <p class="mt-4 mb-4 text-lg text-titleBrownLite">We ensure a safe, secure, and structured system of misconduct filing and redressal.
-                </p>
+                <div class="flex">
+                  <div class="inline-table pr-16">
+                    <span
+                      class="
+                        text-7xl
+                        font-extrabold
+                        tracking-normal
+                        text-titleBrown
+                        leading-normal
+                        font-libre
+                      "
+                      >3</span
+                    >
+                    <span
+                      class="
+                        text-2xl
+                        font-extrabold
+                        tracking-normal
+                        text-titleBrownMedium
+                        leading-normal
+                        font-libre
+                      "
+                      >/4</span
+                    >
+                  </div>
+                  <div>
+                    <h3
+                      class="
+                        text-2xl
+                        font-extrabold
+                        tracking-normal
+                        text-titleBrown
+                        leading-normal
+                      "
+                    >
+                      Facilitate anonymous doubt clarification and confidential
+                      process
+                    </h3>
+                    <p class="mt-4 mb-4 text-lg text-titleBrownLite">
+                      We ensure a safe, secure, and structured system of
+                      misconduct filing and redressal.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -949,35 +1316,66 @@
             lg:gap-12
           "
         >
-        
-        <div
-        class="
-          px-4
-          max-w-xl
-          mx-auto
-          sm:px-6
-          lg:py-16 lg:max-w-none lg:mx-0 lg:px-0
-          col-span-2
-        "
-      >
-        <div>
-          <div class="mt-6">
-            <h3
-              class="
-                text-4xl
-                font-extrabold
-                tracking-normal
-                text-titleBrown
-                leading-normal
-              "
-            >
-            Address sexual misconducts in a legally compliant & secure manner            </h3>
-            <p class="mt-4 mb-4 text-lg text-titleBrownLite">
-                We provide a nudge based, robust complaint management system for your Internal Committees and Redressal teams to manage multiple complaints across multiple teams.
-            </p>
+          <div
+            class="
+              px-4
+              max-w-xl
+              mx-auto
+              sm:px-6
+              lg:py-16 lg:max-w-none lg:mx-0 lg:px-0
+              col-span-2
+            "
+          >
+            <div>
+              <div class="mt-6">
+                <div class="flex">
+                  <div class="inline-table pr-16">
+                    <span
+                      class="
+                        text-7xl
+                        font-extrabold
+                        tracking-normal
+                        text-titleBrown
+                        leading-normal
+                        font-libre
+                      "
+                      >4</span
+                    >
+                    <span
+                      class="
+                        text-2xl
+                        font-extrabold
+                        tracking-normal
+                        text-titleBrownMedium
+                        leading-normal
+                        font-libre
+                      "
+                      >/4</span
+                    >
+                  </div>
+                  <div>
+                    <h3
+                      class="
+                        text-2xl
+                        font-extrabold
+                        tracking-normal
+                        text-titleBrown
+                        leading-normal
+                      "
+                    >
+                      Address workplace misconducts in a legally compliant &
+                      secure manner
+                    </h3>
+                    <p class="mt-4 mb-4 text-lg text-titleBrownLite">
+                      We provide a nudge based, robust complaint management
+                      system for your Internal Committees and Redressal teams to
+                      manage multiple complaints across multiple teams.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
           <div class="mt-12 sm:mt-16 lg:mt-0">
             <div
               class="
@@ -993,16 +1391,674 @@
             >
               <img
                 class="w-full"
-                src="./assets/image 25.png"
+                src="./assets/p_4.png"
                 alt="Inbox user interface"
               />
             </div>
           </div>
-
         </div>
       </div>
     </div>
-    <img class="w-full" src="./assets/Home.svg" alt="Inbox user interface" />
+
+    <!-- Testimonials -->
+    <div class="max-w-7xl mx-auto py-16 px-4">
+      <div class="text-center pb-10">
+        <h2
+          class="
+            mt-1
+            font-extrabold
+            text-gray-900
+            sm:text-4xl sm:tracking-tight
+            lg:text-4xl
+          "
+        >
+          Building inclusive workplaces- one team at a time.
+        </h2>
+        <p class="max-w-xl mt-5 mx-auto text-lg text-gray-500">Trusted By</p>
+      </div>
+      <section
+        class="hero container max-w-screen-lg mx-auto pb-4 flex justify-center"
+      >
+        <img
+          src="./assets/clients.png"
+          alt="screenshot"
+          class="filter grayscale"
+        />
+      </section>
+      <div class="mt-1">
+        <div class="grid grid-cols-1 gap-x-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="mt-6 bg-tBlue rounded-lg">
+            <p class="mt-5 text-sm text-gray-500 text-center px-8">
+              "Conduct is very simple and elegant to use and our employees had
+              no trouble adapting to this platform."
+            </p>
+            <p class="mt-5 text-base text-gray-500 text-center px-8 italic">
+              Intentwise
+            </p>
+          </div>
+          <div class="mt-6 bg-tPink rounded-lg px-2 py-4">
+            <p class="mt-5 text-sm text-gray-500 text-center px-8">
+              "Compliance is broken down to simple tasks that can be flexibly
+              carried out throughout the year."
+            </p>
+            <p class="mt-5 text-base text-gray-500 text-center px-8 italic">
+              Tyson Foods
+            </p>
+          </div>
+          <div class="mt-6 bg-tOrange rounded-lg px-2 py-4">
+            <p class="mt-5 text-sm text-gray-500 text-center px-8">
+              "Having all the team members on a single platform, makes adoption
+              and understanding the importance of the POSH law is faster, with
+              the team."
+            </p>
+            <p class="mt-5 text-base text-gray-500 text-center px-8 italic">
+              The Dialogue
+            </p>
+          </div>
+          <div class="mt-6 bg-tGreen rounded-lg px-2 py-4">
+            <p class="mt-5 text-sm text-gray-500 text-center px-8">
+              “Compliance and culture-building can be exhaustive and tedious. A
+              platform that helps us manage implementation and education in one
+              place convinced us this was the right choice.”
+            </p>
+            <p class="mt-5 text-base text-gray-500 text-center px-8 italic">
+              Klenty
+            </p>
+          </div>
+          <div class="mt-6 bg-tGrey rounded-lg px-2 py-4">
+            <p class="mt-5 text-sm text-gray-500 text-center px-8">
+              "The progression of learning how to build and invite psychological
+              safety within the organisation is well thought-through. That it’s
+              self-paced, available all through the year, and an invitation to
+              examine own biases is icing on the cake."
+            </p>
+            <p class="mt-5 text-base text-gray-500 text-center px-8 italic">
+              Obvious
+            </p>
+          </div>
+          <div class="mt-6 bg-tYellow rounded-lg px-2 py-4">
+            <p class="mt-5 text-sm text-gray-500 text-center px-8">
+              "Conduct provides a comprehensive avenue for teams to absorb
+              inclusive behaviour. It is a simple tool solving complex problems
+              for remote and growing teams."
+            </p>
+            <p class="mt-5 text-base text-gray-500 text-center px-8 italic">
+              Exceleron
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="bg-darkBlue">
+      <div class="max-w-7xl mx-auto py-20 px-4sm:px-6 lg:px-8">
+        <h2
+          class="
+            mt-1
+            font-extrabold
+            text-brandLight
+            sm:text-4xl sm:tracking-tight
+            lg:text-4xl
+          "
+        >
+          Pricing plans for teams of all sizes
+        </h2>
+        <p class="mt-6 max-w-2xl text-1xl text-gray-400">
+          Choose an affordable plan that's packed with the best features for
+          engaging your audience, creating customer loyalty, and driving sales.
+        </p>
+
+        <!-- Tiers -->
+        <div class="">
+          <div
+            class="
+              mt-12
+              space-y-4
+              sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6
+              lg:max-w-4xl lg:mx-auto
+              xl:max-w-none xl:mx-0 xl:grid-cols-4
+            "
+          >
+            <div
+              class="
+                bg-brandLight
+                border border-gray-200
+                rounded-lg
+                shadow-sm
+                flex flex-col
+                p-6
+              "
+            >
+              <div class="flex-1">
+                <h2 class="text-3xl leading-6 font-medium text-darkBlue">
+                  Seed
+                </h2>
+                <p class="mt-4 text-sm text-gray-500">
+                  Start right away - No hidden costs, pinky promise!
+                </p>
+                <div class="flex space-x-3 items-center py-2 my-2">
+                  <svg
+                    class="
+                      flex-shrink-0
+                      h-3
+                      w-3
+                      text-brandLight
+                      rounded-2xl
+                      bg-brand
+                    "
+                    x-description="Heroicon name: sodivd/check"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span class="text-sm font-medium text-gray-600"
+                    >Upto 10 employees
+                  </span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="
+                  mt-8
+                  block
+                  font-medium
+                  w-full
+                  bg-brand
+                  rounded-md
+                  py-2
+                  text-sm text-white text-center
+                  hover:bg-opacity-90
+                "
+                >Get Started</a
+              >
+            </div>
+
+            <div
+              class="
+                bg-brandLight
+                border border-gray-200
+                rounded-lg
+                shadow-sm
+                flex flex-col
+                p-6
+              "
+            >
+              <div class="flex-1">
+                <h2 class="text-3xl leading-6 font-medium text-darkBlue">
+                  Sapling
+                </h2>
+                <p class="mt-4 text-sm text-gray-500">
+                  We understand the needs of a growing team, we have specially
+                  curated our features for your workplace. Write to us and let's
+                  get you started with a special pricing.
+                </p>
+                <div class="flex space-x-3 items-center py-2 my-2">
+                  <svg
+                    class="
+                      flex-shrink-0
+                      h-3
+                      w-3
+                      text-brandLight
+                      rounded-2xl
+                      bg-brand
+                    "
+                    x-description="Heroicon name: sodivd/check"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span class="text-sm font-medium text-gray-600"
+                    >Teams with 10+ employees
+                  </span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="
+                  mt-8
+                  block
+                  font-medium
+                  w-full
+                  bg-brand
+                  rounded-md
+                  py-2
+                  text-sm text-white text-center
+                  hover:bg-opacity-90
+                "
+                >Contact Us</a
+              >
+            </div>
+
+            <div
+              class="
+                bg-brandLight
+                border border-gray-200
+                rounded-lg
+                shadow-sm
+                flex flex-col
+                p-6
+              "
+            >
+              <div class="flex-1">
+                <h2 class="text-3xl leading-6 font-medium text-darkBlue">
+                  Tree
+                </h2>
+                <p class="mt-4 text-sm text-gray-500">
+                  Every enterprise has different requirements, we understand
+                  your need for customization and integrations. Write to us and
+                  let us walk you through the journey.
+                </p>
+                <div class="flex space-x-3 items-center py-2 my-2">
+                  <svg
+                    class="
+                      flex-shrink-0
+                      h-3
+                      w-3
+                      text-brandLight
+                      rounded-2xl
+                      bg-brand
+                    "
+                    x-description="Heroicon name: sodivd/check"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span class="text-sm font-medium text-gray-600"
+                    >Enterprises requiring customization
+                  </span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="
+                  mt-8
+                  block
+                  w-full
+                  font-medium
+                  bg-brand
+                  rounded-md
+                  py-2
+                  text-sm text-white text-center
+                  hover:bg-opacity-90
+                "
+                >Contact Us</a
+              >
+            </div>
+
+            <div
+              class="
+                bg-brandLight
+                border border-gray-200
+                rounded-lg
+                shadow-sm
+                flex flex-col
+                p-6
+              "
+            >
+              <div class="flex-1">
+                <h2 class="text-3xl leading-6 font-medium text-darkBlue">
+                  Succulents
+                </h2>
+                <p class="mt-4 text-sm text-gray-500">
+                  POSH Advisory, External Member Empanelment, Training Sessions,
+                  Consultations, Certifications, D&I Audits. What do you need?
+                  We are here.
+                </p>
+                <div class="flex space-x-3 items-center py-2 my-2">
+                  <svg
+                    class="
+                      flex-shrink-0
+                      h-3
+                      w-3
+                      text-brandLight
+                      rounded-2xl
+                      bg-brand
+                    "
+                    x-description="Heroicon name: sodivd/check"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span class="text-sm font-medium text-gray-600"
+                    >Compliance Services</span
+                  >
+                </div>
+              </div>
+              <a
+                href="#"
+                class="
+                  mt-8
+                  block
+                  w-full
+                  border
+                  font-medium
+                  border-brand
+                  rounded-md
+                  py-2
+                  text-sm text-brand text-center
+                  hover:bg-opacity-90
+                "
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog -->
+    <div
+      class="
+        relative
+        bg-gray-50
+        pt-16
+        pb-10
+        px-4
+        sm:px-6
+        lg:pt-24 lg:pb-16 lg:px-8
+      "
+    >
+      <div class="absolute inset-0">
+        <div class="bg-white h-1/3 sm:h-2/3"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto">
+        <div class="text-center">
+          <h2
+            class="
+              text-3xl
+              tracking-tight
+              font-extrabold
+              text-gray-900
+              sm:text-4xl
+            "
+          >
+            Interested in building your knowledge?
+          </h2>
+          <p class="mt-3 max-w-2xl mx-auto text-sm text-gray-500 sm:mt-4">
+            Read our curations…
+          </p>
+        </div>
+        <div
+        class="mt-12 max-w-lg mx-auto  lg:max-w-none"
+        >
+        <div id="medium-widget"></div>
+        <div class="
+        mt-10
+        max-w-sm
+        mx-auto
+        sm:max-w-none sm:flex sm:justify-center
+      ">
+      <div class="mx-auto inline-grid grid-cols-1
+        ">
+        <a href="https://getconduct.medium.com/" class="
+            flex
+            items-center
+            justify-center
+            px-4
+            py-3
+            border border-transparent
+            text-base
+            font-medium
+            rounded-md
+            shadow-sm
+            text-white
+            bg-brand
+            hover:bg-opacity-90
+            sm:px-8
+          " target="_blank">
+          View all articles
+        </a>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-darkBlue" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" class="sr-only">Footer</h2>
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div class="space-y-8 xl:col-span-1">
+            <a href="/">
+              <span class="sr-only">GetConduct</span>
+              <img
+                class="h-8 w-auto sm:h-10"
+                src="./assets/getConduct_logo.png"
+                alt="GetConduct"
+              />
+            </a>
+            <p class="text-gray-500 text-base">
+              Conduct is your toolkit to address gender laws compliance and D&I
+              aspirations through a tech plus data-driven solution. We partner
+              with aspirational organizations to build visionary inclusive and
+              safe teams of tomorrow.
+            </p>
+          </div>
+          <div class="mt-12 grid grid-cols-3 gap-8 xl:mt-0 xl:col-span-2">
+            <div class="md:grid md:grid-cols-1 md:gap-8">
+              <div class="mt-12 md:mt-0">
+                <h3
+                  class="
+                    text-sm
+                    font-semibold
+                    text-gray-400
+                    tracking-wider
+                    uppercase
+                  "
+                >
+                  Company
+                </h3>
+                <ul role="list" class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="./about.html"
+                      class="text-base text-gray-500 hover:text-opacity-75"
+                    >
+                      About Us
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-opacity-75"
+                    >
+                      Blog
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-opacity-75"
+                    >
+                      Contact
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-opacity-75"
+                    >
+                      FAQ
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-1 md:gap-8">
+              <div class="mt-12 md:mt-0">
+                <h3
+                  class="
+                    text-sm
+                    font-semibold
+                    text-gray-400
+                    tracking-wider
+                    uppercase
+                  "
+                >
+                  Legal
+                </h3>
+                <ul role="list" class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="./privacy-policy.html"
+                      class="text-base text-gray-500 hover:text-opacity-75"
+                    >
+                      Privacy Policy
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="./terms-and-conditions.html" 
+                      class="text-base text-gray-500 hover:text-opacity-75"
+                    >
+                      Terms of Services
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-1 md:gap-8">
+              <div class="mt-12 md:mt-0">
+                <h3
+                  class="
+                    text-sm
+                    font-semibold
+                    text-gray-400
+                    tracking-wider
+                    uppercase
+                  "
+                >
+                  Social
+                </h3>
+                <ul role="list" class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-opacity-75"
+                    >
+                      <div class="flex flex-row items-center">
+                        <div class="pr-1">
+                          <span class="text-gray-400 hover:text-opacity-75">
+                            <span class="sr-only">Facebook</span>
+                            <svg
+                              class="h-4 w-4"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </span>
+                        </div>
+                        <div>Facebook</div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-opacity-75"
+                    >
+                      <div class="flex flex-row items-center">
+                        <div class="pr-1">
+                          <span class="text-gray-400 hover:text-opacity-75">
+                            <span class="sr-only">Twitter</span>
+                            <svg
+                              class="h-4 w-4"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                            >
+                              <path
+                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                              ></path>
+                            </svg>
+                          </span>
+                        </div>
+                        <div>Twitter</div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-opacity-75"
+                    >
+                      <div class="flex flex-row items-center">
+                        <div class="pl-1 pr-2">
+                          <span class="text-gray-400 hover:text-opacity-75">
+                            <span class="sr-only">Linkedin</span>
+                            <svg
+                              class="h-3 w-3"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                            >
+                              <path
+                                xmlns="http://www.w3.org/2000/svg"
+                                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div>Linkedin</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 border-t border-gray-200 pt-8">
+          <p class="text-base text-gray-400 xl:text-center">
+            &copy; 2021 GetConduct, Inc. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="index.js"></script>
+    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@getconduct","postsPerLine":1,"limit":3,"picture":"big","fields":["description","claps","publishAt"],"ratio":"landscape"}})</script>    <script type="module" src="index.js"></script>
   </body>
 </html>
