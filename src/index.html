@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Libre+Caslon+Text:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
   </head>
   <body>
     <div class="bg-brandLight">
@@ -1351,13 +1352,55 @@
         <p class="max-w-xl mt-5 mx-auto text-lg text-gray-500">Trusted By</p>
       </div>
       <section
-        class="hero container max-w-screen-lg mx-auto py-4 flex justify-center"
+        class="max-w-screen-lg mx-auto py-4"
       >
-        <img
-          src="./assets/clients.png"
-          alt="screenshot"
-          class="filter grayscale"
-        />
+        
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide"><img
+            src="./assets/clients_logos/1.png"
+            alt="screenshot"
+            class="filter grayscale"
+          /></li>
+          <li class="splide__slide"><img
+            src="./assets/clients_logos/2.png"
+            alt="screenshot"
+            class="filter grayscale"
+          /></li>
+          <li class="splide__slide"><img
+            src="./assets/clients_logos/3.png"
+            alt="screenshot"
+            class="filter grayscale"
+          /></li>
+          <li class="splide__slide"><img
+            src="./assets/clients_logos/4.png"
+            alt="screenshot"
+            class="filter grayscale"
+          /></li>
+          <li class="splide__slide"><img
+            src="./assets/clients_logos/5.png"
+            alt="screenshot"
+            class="filter grayscale"
+          /></li>
+          <li class="splide__slide"><img
+            src="./assets/clients_logos/4.png"
+            alt="screenshot"
+            class="filter grayscale"
+          /></li>
+          <li class="splide__slide"><img
+            src="./assets/clients_logos/3.png"
+            alt="screenshot"
+            class="filter grayscale"
+          /></li>
+          <li class="splide__slide"><img
+            src="./assets/clients_logos/2.png"
+            alt="screenshot"
+            class="filter grayscale"
+          /></li>
+        </ul>
+      </div>
+    </div>
       </section>
       <div class="mt-1">
         <div class="grid grid-cols-1 gap-x-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -1423,7 +1466,7 @@
         </div>
       </div>
     </div>
-
+    
     <!-- Pricing -->
     <div id="pricing" class="bg-darkBlue">
       <div class="max-w-7xl mx-auto py-20 px-4sm:px-6 lg:px-8">
@@ -1972,6 +2015,7 @@
       </div>
     </footer>
 
+    <!-- Contact Form -->
     <div
       class="fixed z-10 inset-0 overflow-y-auto hidden"
       aria-labelledby="modal-title"
@@ -2218,6 +2262,9 @@
       let cancelBtn = document.getElementById("cancel_btn");
       let overlay = document.getElementById("overlay");
       const scheduleDemoForm = document.getElementById("scheduleDemo");
+      
+      // intergomat webhook api
+      const url = 'https://hook.integromat.com/q3jeyun4qhyz9rfjo2s1ul238x0ofn66';
 
       let onModuleOpen = () =>{
         modal.classList.remove('hidden')
@@ -2245,9 +2292,6 @@
       scheduleDemoForm.addEventListener("submit", function(e){
         e.preventDefault();
         const formData = new FormData(this);
-
-        console.log("formData", formData);
-        const url = 'https://hook.integromat.com/q3jeyun4qhyz9rfjo2s1ul238x0ofn66';
         fetch(url, {
           method: 'post',
           body:formData
@@ -2258,6 +2302,17 @@
         })
       });
     </script>
+    <script>
+      document.addEventListener( 'DOMContentLoaded', function () {
+        new Splide( '.splide', {
+          'arrowPath': 'm15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z',
+          perPage: 5,
+	        type: 'loop'
+        } ).mount();
+      } );
+    </script>
     <script type="module" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
   </body>
 </html>

@@ -47,3 +47,19 @@
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
+
+.splide__pagination{
+  display: none;
+}
+
+.splide__arrow--prev{
+  left:-4em;
+}
+
+.splide__arrow--next{
+  right: -4em;
+}
+
+.splide__arrow{
+  background-color: #fff;
+}
