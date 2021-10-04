@@ -13,6 +13,7 @@
     able
     to adopt “inclusion and respect” as part of your company’s DNA."
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,215 +21,105 @@
       rel="stylesheet"
     />
   </head>
-  <div>
+  <body>
     <div class="bg-brandLight">
-      <div class="relative overflow-hidden">
-        <div class="relative pt-6 pb-6">
-          <div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6">
-              <nav
-                class="
-                  relative
-                  flex
-                  items-center
-                  justify-between
-                  sm:h-10
-                  md:justify-center
-                "
-                aria-label="Global"
-              >
-                <div
-                  class="
-                    flex
-                    items-center
-                    flex-1
-                    md:absolute md:inset-y-0 md:left-0
-                  "
-                >
-                  <div
-                    class="flex items-center justify-between w-full md:w-auto"
-                  >
-                    <a href="/">
-                      <span class="sr-only">GetConduct</span>
-                      <img
-                        class="h-8 w-auto sm:h-10"
-                        src="./assets/getConduct_logo.png"
-                        alt="GetConduct"
-                      />
-                    </a>
-                    <div class="-mr-2 flex items-center md:hidden">
-                      <button
-                        type="button"
-                        class="
-                          bg-gray-50
-                          rounded-md
-                          p-2
-                          inline-flex
-                          items-center
-                          justify-center
-                          text-gray-400
-                          hover:text-gray-500 hover:bg-gray-100
-                          focus:outline-none
-                          focus:ring-2
-                          focus:ring-inset
-                          focus:ring-indigo-500
-                        "
-                        aria-expanded="false"
-                      >
-                        <span class="sr-only">Open main menu</span>
-                        <!-- Heroicon name: outline/menu -->
-                        <svg
-                          class="h-6 w-6"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          aria-hidden="true"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="hidden md:flex md:space-x-10">
-                  <a
+      <nav class="max-w-7xl mx-auto flex flex-wrap items-center justify-between p-5 bg-brandLight">      
+    
+        <a href="/">
+          <span class="sr-only">GetConduct</span>
+          <img width="155px" height="43px"
+            class="h-8 w-auto sm:h-10"
+            src="./assets/getConduct_logo.png"
+            alt="GetConduct"
+          />
+        </a>
+              <div class="flex lg:hidden">
+                <button id="hamburger">
+                  <img class="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="40" height="40" />
+                  <img class="toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="40" height="40" />
+                </button>
+              </div>      
+              <div class="toggle hidden lg:flex w-full lg:max-w-7xl lg:w-auto lg:flex text-left text-bold mt-5 lg:mt-0 border-t-2 border-brand lg:border-none">        
+                <a
                     href="/"
-                    class="font-medium text-gray-500 hover:text-gray-900"
+                    class="font-medium text-gray-500 hover:text-gray-900 block lg:inline-block px-3 py-3 border-b-2 border-brand lg:border-none"
                     >Home</a
                   >
+
                   <a
-                  href="/#howitworks"
-                  class="font-medium text-gray-500 hover:text-gray-900"
-                  >How it works</a
-                >
+                    href="#howitworks"
+                    class="font-medium text-gray-500 hover:text-gray-900 block lg:inline-block px-3 py-3 border-b-2 border-brand lg:border-none"
+                    >How it works</a
+                  >
 
-                <a
-                  href="/#whyconduct"
-                  class="font-medium text-gray-500 hover:text-gray-900"
-                  >Why Conduct</a
-                >
-                <a
-                  href="/#pricing"
-                  class="font-medium text-gray-500 hover:text-gray-900"
-                  >Pricing</a
-                >
+                  <a
+                    href="#whyconduct"
+                    class="font-medium text-gray-500 hover:text-gray-900 block lg:inline-block px-3 py-3 border-b-2 border-brand lg:border-none"
+                    >Why Conduct</a
+                  >
+                  <a
+                    href="#pricing"
+                    class="font-medium text-gray-500 hover:text-gray-900 block lg:inline-block px-3 py-3 border-b-2 border-brand lg:border-none"
+                    >Pricing</a
+                  >
 
+                  <a
+                    href="#blog"
+                    class="font-medium text-gray-500 hover:text-gray-900 block lg:inline-block px-3 py-3 border-b-2 border-brand lg:border-none"
+                    >Blog</a
+                  >
+
+                  <a
+                    href="./about.html"
+                    class="font-medium text-gray-500 hover:text-gray-900 block lg:inline-block px-3 py-3 border-b-2 border-brand lg:border-none"
+                    >About Us</a
+                  >
+                
+              </div>      
+              <!-- <a href="#" class="toggle hidden lg:flex w-full lg:w-auto px-4 py-2 text-right bg-blue-900 hover:bg-blue-500 text-white lg:rounded">Create Account</a> -->
+              
+              <span class="toggle hidden lg:flex w-full lg:w-auto mt-2">
                 <a
-                  href="https://getconduct.medium.com/"
+                  href="https://app.getconduct.in/login?utm_source=google&utm_medium=website&utm_campaign=login&utm_content=loginlink"
                   target="_blank"
-                  class="font-medium text-gray-500 hover:text-gray-900"
-                  >Blog</a
-                >
-
-                <a
-                  href="./about.html"
-                  class="font-medium text-gray-500 hover:text-gray-900"
-                  >About Us</a
-                >
-                </div>
-                <div
                   class="
-                    hidden
-                    md:absolute
-                    md:flex
-                    md:items-center
-                    md:justify-end
-                    md:inset-y-0
-                    md:right-0
+                    inline-flex
+                    items-center
+                    px-4
+                    py-2
+                    border border-solid border-brand
+                    text-base
+                    font-medium
+                    rounded-md
+                    text-brand
+                    bg-white
+                    hover:text-opacity-60
                   "
                 >
-                  <span class="inline-flex">
-                    <a
-                    href="https://app.getconduct.in/login?utm_source=google&utm_medium=website&utm_campaign=login&utm_content=loginlink"
-                    target="_blank"
-                      class="
-                        inline-flex
-                        items-center
-                        px-4
-                        py-2
-                        border border-solid border-brand
-                        text-base
-                        font-medium
-                        rounded-md
-                        text-brand
-                        bg-white
-                        hover:text-opacity-60
-                      "
-                    >
-                      Login
-                    </a>
-                    <a
-                      href="#"
-                      class="
-                        ml-2
-                        inline-flex
-                        items-center
-                        px-4
-                        py-2
-                        border border-transparent
-                        text-base
-                        font-medium
-                        rounded-md
-                        bg-brand
-                        text-brandLight
-                        hover:text-opacity-60
-                      "
-                    >
-                      Try it now
-                    </a>
-                  </span>
-                </div>
-              </nav>
-            </div>
-
-            <!--
-            Mobile menu, show/hide based on menu open state.
-  
-            Entering: "duration-150 ease-out"
-              From: "opacity-0 scale-95"
-              To: "opacity-100 scale-100"
-            Leaving: "duration-100 ease-in"
-              From: "opacity-100 scale-100"
-              To: "opacity-0 scale-95"
-          -->
-            <!-- <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-            <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-              <div class="px-5 pt-4 flex items-center justify-between">
-                <div>
-                  <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
-                </div>
-                <div class="-mr-2">
-                  <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                    <span class="sr-only">Close main menu</span>
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Product</a>
-  
-                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
-  
-                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Marketplace</a>
-  
-                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Company</a>
-              </div>
-              <a href="#" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700">
-                Login
-              </a>
-            </div>
-          </div> -->
-          </div>
-        </div>
-      </div>
+                  Login
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  onclick="onModuleOpen()"
+                  class="
+                    ml-2
+                    inline-flex
+                    items-center
+                    px-4
+                    py-2
+                    border border-transparent
+                    text-base
+                    font-medium
+                    rounded-md
+                    bg-brand
+                    text-brandLight
+                    hover:text-opacity-60
+                  "
+                >
+                  Try it now
+                </a>
+              </span>
+            </nav>  
     </div>
     <div class="max-w-7xl mx-auto pt-16 pb-8 px-4">
       <div class="container">
@@ -521,6 +412,14 @@
       </div>
     </footer>
     <script type="module" src="index.js"></script>
+    <script>
+      document.getElementById("hamburger").onclick = function toggleMenu() {
+  const navToggle = document.getElementsByClassName("toggle");
+  for (let i = 0; i < navToggle.length; i++) {
+    navToggle.item(i).classList.toggle("hidden");
+  }
+};
+      </script>
     <!-- Start of HubSpot Embed Code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/8322301.js"></script>
   <!-- End of HubSpot Embed Code -->
