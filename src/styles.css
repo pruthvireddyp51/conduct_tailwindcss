@@ -95,6 +95,7 @@
 }
 @media only screen and (max-width: 768px) {
   .medium-widget__wrapper {
+    gap: 0rem;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
@@ -123,6 +124,7 @@
 .medium-widget-article__column {
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: #fff;
 }
 
 .splide__arrow--prev {

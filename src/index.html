@@ -252,7 +252,7 @@
           class="z-0 absolute top-16 px-44"
           src="./assets/how_it_works/background_arrow.png"
         />
-        <div class="flex items-center justify-center p-10">
+        <div class="flex items-center justify-center sm:p-4 lg:p-10">
           <div
             class="
               grid
@@ -322,7 +322,7 @@
               </div>
             </div>
             <!-- Tile 3 -->
-            <div class="flex flex-col p-4 m-2 mt-8">
+            <div class="flex flex-col p-4 m-2 mt-4">
               <section
                 class="
                   hero
@@ -904,7 +904,7 @@
                 class="
                   pl-4
                   
-                  sm:pl-6
+                  sm:py-4
                   md:-mr-16
                   lg:px-0 lg:m-0 lg:relative lg:h-full
                   flex
@@ -922,7 +922,7 @@
           </div>
         </div>
       </div>
-      <div class="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-16">
+      <div class="max-w-xl mx-auto px-4 sm:px-8 lg:max-w-7xl lg:px-16">
         <dl class="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-24">
           <div>
             <dt>
@@ -989,7 +989,7 @@
         </dl>
 
         <blockquote
-          class="mt-6 md:flex-grow md:flex md:flex-col items-center py-6"
+          class=" mt-10 mx-8 md:flex-grow md:flex md:flex-col items-center lg:mb-4 lg:mt-10"
         >
           <div class="relative text-xl font-libre text-gray-300 md:flex-grow">
             <svg
@@ -1510,7 +1510,7 @@
 
     <!-- Pricing -->
     <div id="pricing" class="bg-darkBlue">
-      <div class="max-w-7xl mx-auto py-20 px-4sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-10">
         <h2
           class="
             mt-1
@@ -2201,6 +2201,36 @@
             </div>
             <div class="pb-4">
               <label
+                for="phone"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Phone Number <span class="text-brand">*</span>
+              </label>
+              <div class="mt-1">
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  autocomplete="phone"
+                  required
+                  class="
+                    appearance-none
+                    block
+                    w-full
+                    px-3
+                    py-2
+                    border border-gray-300
+                    rounded-md
+                    shadow-sm
+                    placeholder-gray-400
+                    focus:outline-none focus:ring-brand focus:border-brand
+                    sm:text-sm
+                  "
+                />
+              </div>
+            </div>
+            <div class="pb-4">
+              <label
                 for="teamsize"
                 class="block text-sm font-medium text-gray-700"
               >
@@ -2209,14 +2239,14 @@
               <div class="mt-4 space-y-4">
                 <div class="flex items-center">
                   <input
-                    id="push-everything"
+                    id="team10Plus"
                     name="teamSize"
                     type="radio"
                     value="10-50"
                     class="focus:brand h-4 w-4 text-brand border-gray-300"
                   />
                   <label
-                    for="push-everything"
+                    for="team10Plus"
                     class="ml-3 block text-sm font-medium text-gray-700"
                   >
                     10 - 50 Employees
@@ -2224,14 +2254,14 @@
                 </div>
                 <div class="flex items-center">
                   <input
-                    id="push-email"
+                    id="team50Plus"
                     name="teamSize"
                     type="radio"
                     value="50-100"
                     class="focus:brand h-4 w-4 text-brand border-gray-300"
                   />
                   <label
-                    for="push-email"
+                    for="team50Plus"
                     class="ml-3 block text-sm font-medium text-gray-700"
                   >
                     50 - 100 Employees
@@ -2239,14 +2269,14 @@
                 </div>
                 <div class="flex items-center">
                   <input
-                    id="push-nothing"
+                    id="team100Plus"
                     name="teamSize"
                     type="radio"
                     value="100+"
                     class="focus:brand h-4 w-4 text-brand border-gray-300"
                   />
                   <label
-                    for="push-nothing"
+                    for="team100Plus"
                     class="ml-3 block text-sm font-medium text-gray-700"
                   >
                     More than 100 Employees
@@ -2313,6 +2343,7 @@
     </div>
 
     <script type="module" src="index.js"></script>
+    <!-- Medium Widget -->
     <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
     <script>
       MediumWidget.Init({
@@ -2327,15 +2358,16 @@
         },
       });
     </script>
+    <!-- Mobile Menu -->
     <script>
       document.getElementById("hamburger").onclick = function toggleMenu() {
-  const navToggle = document.getElementsByClassName("toggle");
-  for (let i = 0; i < navToggle.length; i++) {
-    navToggle.item(i).classList.toggle("hidden");
-  }
-};
-      </script>
-
+        const navToggle = document.getElementsByClassName("toggle");
+        for (let i = 0; i < navToggle.length; i++) {
+          navToggle.item(i).classList.toggle("hidden");
+        }
+      };
+    </script>
+    <!-- Schedule a Demo Form-->
     <script>
       let modal = document.getElementById("scheduleModal");
       let openBtn = document.getElementById("open-btn");
@@ -2383,6 +2415,7 @@
         });
       });
     </script>
+    <!-- Clients Slider Setting-->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         new Splide(".splide", {
@@ -2409,6 +2442,7 @@
       });
     </script>
     <script type="module" src="index.js"></script>
+    <!-- Clients Slider Plugin-->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
   <!-- Start of HubSpot Embed Code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/8322301.js"></script>
