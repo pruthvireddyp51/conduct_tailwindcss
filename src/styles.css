@@ -107,6 +107,9 @@
 .medium-widget-article__title {
   font-family: "Libre Caslon Text", serif;
   padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .medium-widget-article__description,
 .medium-widget-article__info {
