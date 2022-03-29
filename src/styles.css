@@ -87,7 +87,9 @@
     transform: rotate(-45deg) translateY(0px);
   }
 }
-
+.medium-widget-article__row{
+  margin-bottom: 15px;
+}
 .medium-widget__wrapper {
   display: grid;
   gap: 3rem;
